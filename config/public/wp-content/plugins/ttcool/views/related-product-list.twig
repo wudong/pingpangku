@@ -1,0 +1,10 @@
+<secion class="product-list-for-review">
+    <h2>相关产品</h2>
+    <ul>
+        {% for post in posts %}
+            <li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
+        {% else %}
+            <li>暂无相关产品</li>
+        {% endfor %}
+    </ul>
+</secion>

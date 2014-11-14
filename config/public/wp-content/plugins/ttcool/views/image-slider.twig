@@ -1,0 +1,16 @@
+
+<ul class="bxslider">
+    {% for image in images %}
+        <li><img src="{{ image }}"/></li>
+    {% else %}
+        <li>Sorry, no posts matched your criteria</li>
+    {% endfor %}
+</ul>
+
+<script>
+
+    jQuery(document).ready(function () {
+        jQuery('.bxslider').bxSlider();
+    });
+
+</script>
